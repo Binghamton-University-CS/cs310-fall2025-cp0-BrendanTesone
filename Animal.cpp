@@ -13,3 +13,4 @@ Animal::Animal() : species(""), year_discovered(0) {};
 void Animal::display() {
     cout << species << " [" << year_discovered << "]" << endl;
 }
+
