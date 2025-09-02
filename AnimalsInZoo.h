@@ -1,3 +1,5 @@
+#ifndef _ANIMALS_IN_ZOO
+#define _ANIMALS_IN_ZOO
 // Add a new class AnimalsInZoo to store 0 or 1 animals:
 // - Private: int numAnimals; and Animal animal;
 // - Constructors:
@@ -18,3 +20,5 @@ class AnimalsInZoo{
         AnimalsInZoo();
         void display();
 };
+
+#endif

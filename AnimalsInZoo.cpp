@@ -13,8 +13,10 @@ AnimalsInZoo::AnimalsInZoo(){
 };
 
 void AnimalsInZoo::display(){
-    cout << numAnimals << endl;
-    animal.display();
+    cout << "Number Animals In Zoo: " << numAnimals << endl;
+    if(numAnimals > 0){
+        animal.display();
+    }
 }
 
 // Add a new class AnimalsInZoo to store 0 or 1 animals:

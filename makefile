@@ -7,13 +7,13 @@ all: zoo
 zoo: zoo.o Animal.o AnimalsInZoo.o
 	g++ zoo.o Animal.o AnimalsInZoo.o -o zoo
 
-Animal.o: Animal.cpp
+Animal.o: Animal.cpp Animal.h
 	g++ -Wall -Wextra -c Animal.cpp
 
-AnimalsInZoo.o: AnimalsInZoo.cpp
+AnimalsInZoo.o: AnimalsInZoo.cpp AnimalsInZoo.h  Animal.h
 	g++ -Wall -Wextra -c AnimalsInZoo.cpp
 
-zoo.o: zoo.cpp
+zoo.o: zoo.cpp Animal.h AnimalsInZoo.h
 	g++ -Wall -Wextra -c zoo.cpp
 
 clean:
